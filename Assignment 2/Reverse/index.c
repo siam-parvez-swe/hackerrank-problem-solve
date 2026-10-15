@@ -8,7 +8,7 @@ int main()
 
     int N;
     scanf("%d", &N);
-    if (-100000 <= N <= 100000)
+    if (N >= -100000 && N <= 100000)
     {
         if (N > 0)
         {
@@ -17,7 +17,7 @@ int main()
                 printf("%d ", i);
             }
         }
-        else if (N < 0)
+        else
         {
             for (int i = N; i <= 0; i++)
             {
